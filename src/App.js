@@ -75,7 +75,7 @@ function App() {
                   <Link className='text-decoration-none' to='/health'>
                     Health</Link><br />
                 </div>
-                <div style={{ transitionProperty: 'all', transitionDuration: '.5s', color: '#105c93' }} className="p-2 pagelink rounded-pill fw-semibold">
+                <div style={{ transitionProperty: 'all', transitionDuration: '.6s', color: '#105c93' }} className="p-2 pagelink rounded-pill fw-semibold">
                   <Link className='text-decoration-none' to='/placement'> Placement Preparation</Link>
                 </div>
               </div>

@@ -51,7 +51,7 @@ const Cough = () => {
                     </ul>
                 </div>
             </div>
-            <div className='position-absolute w-100'>
+            <div className='footer'>
                 <Footer />
             </div>
         </div>

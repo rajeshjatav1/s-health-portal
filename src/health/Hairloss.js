@@ -80,7 +80,7 @@ const HairLoss = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="footer">
                 <Footer />
             </div>
         </div>

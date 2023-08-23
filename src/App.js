@@ -6,89 +6,92 @@ import { Link } from 'react-router-dom';
 // import axios from 'axios';
 
 function App() {
-  // const [message,setMessage] = useState('');
-  // useEffect(()=>{
-  //   if(localStorage.getItem('access_token')==null){
-  //     window.location.href='/'
-  //   }
-  //   else{
-  //     (async () =>{
-  //       try {
-  //         const {data} = await axios.get('http://localhost:3000/home',{
-  //           headers:{
-  //             'Content-Type': 'application/json'
-  //           }
-  //         });
-  //         setMessage(data.message);
-  //       }
-  //       catch(e){
-  //         console.log('not auth')
-  //       }
-  //     })()
-  //   };
-  // },[]);
+
+
   return (
+    
     <>
       <div className='homepage'>
-        <div>
-          <Navbar />
-        </div>
-        <div className='mx-2 d-lg-flex d-none homepage-content'>
-          <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className="container shadow border p-3 my-4 rounded-3">
-            <div className="text-center mt-2">
-              <h5 className='mt-2'>Welcome to S-Placement Portal <br />
-                This portal is mainly developed for Students who face heath related common problems,
-                We've also added some important materials for your placement preparation
-                if you are facing any health or placement related issue then you are on right place</h5>
-            </div>
-            <div className='text-center d-flex justify-content-center flex-column mt-2'>
-              <div className='fs-4'>
-                <h5 style={{ backgroundColor: '#0c0c0c70' }} className='mt-5 p-3 rounded-4 text-light'>Select what you want to study about</h5>
-              </div>
-              <div className=''>
-                <div style={{ transitionProperty: 'all', transitionDuration: '.5s', color: '#105c93' }} className='p-2 pagelink rounded-pill fw-semibold'>
-                  <Link className='text-decoration-none' to='/health'>
-                    Health</Link><br />
-                </div>
-                <div style={{ transitionProperty: 'all', transitionDuration: '.5s', color: '#105c93' }} className="p-2 pagelink rounded-pill fw-semibold">
-                  <Link className='text-decoration-none' to='/placement'> Placement Preparation</Link>
-                </div>
-              </div>
-            </div>
+      <div>
+            <Navbar/>
           </div>
+        <div className=''>
 
-        </div>
-        <div className='d-lg-none d-block mobilehome'>
-        <div className="m-0 p-3 w-100">
-          <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className="container shadow border p-3 mt-3 rounded-5">
-            <div className="text-center mt-2">
-              <h5 style={{fontFamily:'Dongle, serif'}} className='mt-2 fs-3'>Welcome to S-Placement Portal <br />
-                This portal is mainly developed for Students who face heath related common problems,
-                We've also added some important materials for your placement preparation
-                if you are facing any health or placement related issue then you are on right place</h5>
-            </div>
-            <div className='text-center d-flex justify-content-center flex-column mt-2'>
-              <div className='fs-4'>
-                <h6 style={{ backgroundColor: '#0c0c0c70' }} className='mt-5 p-3 rounded-4 text-light'>Select what you want to study about</h6>
+          <div className='homepage-content'>
+            <div id='content-container' className="p-3 my-4 rounded-3 width">
+              <div className="text-start">
+                <h1 className='mt-2 welcome_text'>Welcome to <br /> S-Placement Portal</h1>
               </div>
-              <div className=''>
-                <div style={{ transitionProperty: 'all', transitionDuration: '.5s', color: '#105c93' }} className='p-2 pagelink rounded-pill fw-semibold'>
-                  <Link className='text-decoration-none' to='/health'>
-                    Health</Link><br />
-                </div>
-                <div style={{ transitionProperty: 'all', transitionDuration: '.5s', color: '#105c93' }} className="p-2 pagelink rounded-pill fw-semibold">
-                  <Link className='text-decoration-none' to='/placement'> Placement Preparation</Link>
-                </div>
+              <div>
+                <h6><i>"The Perfect Place for your Placements and Health"</i></h6>
+              </div>
+              <div className='explore-btn-container'>
+                <a href="#placement">
+                  <h4>
+                    <button className='explore-btn'>Explore</button>
+                  </h4>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div className='width py-5 clearfix' id='placement'>
+            <div className="placement-left-section">
+              <div>
+                <h3 style={{ borderBottom: "2px solid green" }} className='placement_head_text'>Placement Preparation</h3>
+              </div>
+              <div>
+                <p className='mt-4 pe-4'>
+                  If you are looking for a place for your placement preparation, then you are on the perfect place,
+                  here you can find <strong>Video Courses,</strong> <strong>Text-Based Courses,</strong> <strong>Practice Sites,</strong> <strong>Technical Interview Questions</strong> and <strong>HR Interview Questions</strong>
+                </p>
+              </div>
+              <div>
+                <h5 className='d-inline-block pe-4'>A Complete Package for all your preparation</h5>
+              </div>
+              <div className='explore-btn-container'>
+                <Link className='text-decoration-none' to='/placement'>
+                  <h4>
+                    <button className='explore-btn'>Prepare</button>
+                  </h4>
+                </Link>
+              </div>
+            </div>
+            <div className="placement-right-section"></div>
+          </div>
+          <hr />
+          <div id='health' className='width py-5 clearfix'>
+            <div className="health_left_section">
+
+            </div>
+            <div className="health_right_section">
+              <div>
+                <h3 style={{ borderBottom: '2px solid green', display: 'inline-block', paddingBottom: '5px' }} >Health</h3>
+              </div>
+              <div className='mt-4'>
+                <p>Here is a <strong> great news</strong> for you, i've done a survey and i found that these disease are usually faced by <strong> students</strong> in their college or school life,</p>
+              </div>
+              <div>
+                <p>You will find here some <strong>common students health issues,</strong> their <strong>symptoms</strong> and <strong> home solution,</strong> go and explore</p>
+              </div>
+              <div>
+                <h5 className='d-inline-block pe-4'>A Complete Package for all your health</h5>
+              </div>
+              <div className='explore-btn-container'>
+                <Link className='text-decoration-none' to='/health'>
+                  <h4>
+                    <button className='explore-btn'>Be Healthy</button>
+                  </h4>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        
+
       </div>
-      <div className='' >
-          <Footer />
-        </div>
+      <div className='footer' >
+        <Footer />
+      </div>
     </>
   );
 }

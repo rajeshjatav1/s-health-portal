@@ -61,7 +61,7 @@ const SkinInfection = () => {
                     </ul>
                 </div>
             </div>
-            <div className='position-relative pt-5'>
+            <div className='footer'>
                 <Footer />
             </div>
 

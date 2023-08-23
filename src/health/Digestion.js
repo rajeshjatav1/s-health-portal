@@ -66,7 +66,7 @@ const Digestion = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="footer">
                 <Footer />
             </div>
 

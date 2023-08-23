@@ -5,19 +5,14 @@ import { Link } from 'react-router-dom'
 
 const TextCourse = () => {
     return (
-        <div style={{ height: '650px' }} id='placement'>
+        <div style={{ height: '100vh' }}>
             <div>
                 <Navbar />
             </div>
-            <div style={{ backgroundColor: '#dcebd7' }} className='mt-2 text-center mx-3 rounded-4'>
-                <h4 className='p-3'>Text Based Courses</h4>
+            <div className='text_courses_head_text'>
+                <h3 style={{ backgroundColor: '#ffffffad' }} className='d-inline-block py-3 px-5 mx-3 rounded-2'>Text Based Courses</h3>
             </div>
-            <div className="text-center mt-3">
-                <i className="text-primary">Explore text based courses which are in simple and precise language for making notes
-
-                    Courses includes text bases courses of C, C++, C#, Java, Python</i>
-            </div>
-            <div className="mt-3 mx-3">
+            <div className="width mt-3">
                 <div className="accordion" id="accordionExample">
                     <div className="accordion-item">
                         <h4 className="accordion-header">
@@ -127,16 +122,16 @@ const TextCourse = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mt-4">
+            <div className="width mt-4">
                 <h5 className='text-center text-success'>Go To <i class="bi bi-hand-index-thumb"></i></h5>
-                <div className='text-center container my-4 d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column flex-sm-row'>
+                <div className=' my-4 d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column flex-sm-row'>
 
-                    <Link className='text-decoration-none me-3 border p-2 rounded coursemenu m-1' to='/health'>Health page</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/'>Home page</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/video-courses'>Video Courses</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/tech-interview'>Technical Interview</Link>
+                    <Link className='text-decoration-none me-3 border p-2 shortcut-menu m-1' to='/health'>Health page</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/'>Home page</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/video-courses'>Video Courses</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/tech-interview'>Technical Interview</Link>
                 </div>
             </div>
             <div style={{position:'relative'}} className='footer'>

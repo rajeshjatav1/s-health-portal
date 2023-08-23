@@ -29,12 +29,9 @@ import Digestion from './health/Digestion';
 import SkinProblems from './health/SkinProblems';
 import HairLoss from './health/Hairloss';
 import SleepIssue from './health/SleepIssue';
+import Malaria from './health/Malaria';
 
 const router = createBrowserRouter([
-  {
-    path:'/home',
-    element:<Prehome/>
-  },
   {
     path: '/',
     element: <App />
@@ -87,6 +84,10 @@ const router = createBrowserRouter([
   {
     path:'health/digestion',
     element:<Digestion/>
+  },
+  {
+    path:'health/malariya',
+    element:<Malaria/>
   },
   {
     path:'placement',

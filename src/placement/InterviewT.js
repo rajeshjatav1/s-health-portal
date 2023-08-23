@@ -9,17 +9,14 @@ const InterviewT = () => {
             <div>
                 <Navbar />
             </div>
-            <div style={{ backgroundColor: '#dcebd7' }} className='mt-2 text-center mx-3 rounded-4'>
-                <h4 className='p-3 m-0'>Technical Interview Questions</h4>
+            <div className='interview_head_text'>
+                <h3 style={{ backgroundColor: '#ffffffad' }} className='d-inline-block py-3 px-5 mx-3 rounded-2'>Technical Interview</h3>
             </div>
             <div className="container">
-                <div className="text-center mt-2">
-                    <i className=" text-primary">Explore Interview questions which are frequently asked in interviews and get ready for your technical interview</i>
-                </div>
                 <div className='mt-3'>
                     <div className="row row-md row-sm me-4">
-                        <div style={{ backgroundColor: '#dcebd7' }} className="col-lg col-md col-sm rounded-3 text-center p-2 shadow border m-3">
-                            <img style={{ height: '30px' }} src="/C.png" className='mt-2' alt="C++ image" />
+                        <div className="col-lg col-md col-sm rounded text-center p-2 shadow border m-3">
+                            <img style={{ height: '30px' }} src="/C.png" className='mt-2' alt="C++" />
                             <h4 style={{ color: '#105c93' }} className='mt-2'>C Interview Questions</h4>
                             <ul className="text-start">
                                 <li className='p-1 ps-2 rounded-3'>
@@ -36,8 +33,8 @@ const InterviewT = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div style={{ backgroundColor: '#dcebd7' }} className="col-lg col-md col-sm rounded-3 text-center p-2 shadow border m-3">
-                            <img style={{ height: '30px' }} src="/C++.png" className='mt-2' alt="C++ image" />
+                        <div className="col-lg col-md col-sm rounded text-center p-2 shadow border m-3">
+                            <img style={{ height: '30px' }} src="/C++.png" className='mt-2' alt="C++" />
                             <h4 style={{ color: '#105c93' }} className='mt-2'>C++ Interview Questions</h4>
                             <ul className="text-start">
                                 <li className='p-1 ps-2 rounded-3'>
@@ -56,7 +53,7 @@ const InterviewT = () => {
 
 
                         </div>
-                        <div style={{ backgroundColor: '#dcebd7' }} className="col-lg col-md col-sm rounded-3 text-center p-2 shadow border m-3">
+                        <div className="col-lg col-md col-sm rounded text-center p-2 shadow border m-3">
                             <img style={{ height: '30px' }} className='mt-2' src="/csharp.png" alt="" />
                             <h4 style={{ color: '#105c93' }} className='mt-2'>C# Interview Questions</h4>
                             <ul className="text-start">
@@ -77,7 +74,7 @@ const InterviewT = () => {
                         </div>
                     </div>
                     <div className="row row-md row-sm me-4">
-                        <div style={{ backgroundColor: '#dcebd7' }} className="col-lg col-md col-sm rounded-3 text-center p-2 shadow border m-3">
+                        <div className="col-lg col-md col-sm rounded text-center p-2 shadow border m-3">
                             <img style={{ height: '30px' }} src="/java.png" className='mt-2' alt="C++ image" />
                             <h4 style={{ color: '#105c93' }} className='mt-2'>Java Interview Questions</h4>
                             <ul className="text-start">
@@ -96,7 +93,7 @@ const InterviewT = () => {
                             </ul>
 
                         </div>
-                        <div style={{ backgroundColor: '#dcebd7' }} className="col-lg col-md col-sm rounded-3 text-center p-2 shadow border m-3">
+                        <div className="col-lg col-md col-sm rounded text-center p-2 shadow border m-3">
                             <img style={{ height: '30px' }} src="/python.png" className='mt-2' alt="C++ image" />
                             <h4 style={{ color: '#105c93' }} className='mt-2'>Python Interview Questions</h4>
                             <ul className="text-start">
@@ -115,7 +112,7 @@ const InterviewT = () => {
                             </ul>
 
                         </div>
-                        <div style={{ backgroundColor: '#dcebd7' }} className="col-lg col-md col-sm rounded-3 text-center p-2 shadow border m-3">
+                        <div className="col-lg col-md col-sm rounded text-center p-2 shadow border m-3">
                             <img style={{ height: '30px' }} src="/html5.png" className='mt-2' alt="C++ image" />
                             <h4 style={{ color: '#105c93' }} className='mt-2'>HTML Interview Questions</h4>
                             <ul className="text-start">
@@ -142,12 +139,12 @@ const InterviewT = () => {
                 <h5 className='text-center text-success'>Go To <i class="bi bi-hand-index-thumb"></i></h5>
                 <div className='text-center container my-4 d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column flex-sm-row'>
 
-                    <Link className='text-decoration-none me-3 border p-2 rounded coursemenu m-1' to='/health'>Health page</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/'>Home page</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/video-courses'>Video Courses</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/text-course'>Text Courses</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
+                    <Link className='text-decoration-none me-3 border p-2 shortcut-menu m-1' to='/health'>Health page</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/'>Home page</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/video-courses'>Video Courses</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/text-course'>Text Courses</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
 
                 </div>
             </div>

@@ -8,33 +8,84 @@
 body,
 html {
   overflow-x: hidden;
-  height: auto;
-  overflow-x: hidden;
-  background-color: rgb(195, 224, 195);
+  /* background-color: rgb(195, 224, 195); */
 }
-.homepage{
-  background: url('../public/s-placement\ portal\ background.jpg') no-repeat;
-  background-size: cover;
-  height: 600px;
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+.homepage {
   background-color: white;
 }
-.homepage-content{
+
+.homepage-content {
   display: flex;
+  width: 100%;
   align-items: center;
-  height: 70%;
+  background: url('../public/background2.jpg') center center/cover no-repeat;
+  height: 95vh;
   opacity: .9;
+}
+
+.width {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.welcome_text {
+  border-bottom: 3px solid green;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.explore-btn-container {
+  margin-top: 20px;
+}
+
+.explore-btn {
+  background: black;
+  color: white;
+  margin: 0px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.explore-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 #navbar {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 50px;
   /* border: 2px solid black; */
   background-color: black;
-  opacity: 0.9;
   color: white;
   flex-direction: row;
+  position: sticky;
 }
 
 #navbar ul {
@@ -44,7 +95,7 @@ html {
 }
 
 #navbar ul a {
-  padding: 8px 20px;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
   transition-property: all;
@@ -57,24 +108,43 @@ html {
 #navbar ul a:hover {
   color: black;
   background-color: white;
-  border-radius: 5px;
   transition-property: all;
   transition-duration: .5s;
 }
-#placement{
- 
+
+.placement-left-section {
+
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+
 }
 
-#footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  background-color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  margin: 0px auto;
-  bottom: 0;
+.placement_head_text {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.placement-right-section {
+  background: url('/public/placement1.jpg') center center/cover no-repeat;
+  height: 350px;
+  float: left;
+  width: 48%;
+}
+
+.health_left_section {
+  background: url('/public/health2.jpg') center center/cover no-repeat;
+  height: 350px;
+  width: 48%;
+  float: left;
+  margin-right: 20px;
+
+}
+
+.health_right_section {
+  padding-left: 20px;
+  float: left;
+  width: 50%;
 }
 
 .courselist li {
@@ -110,32 +180,357 @@ html {
   transition-duration: .6s;
 }
 
+.placement-page-welcome-text {
+  background: url('/public/background2.jpg') center center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0px;
+  background-color: black;
+  padding: 15px 0px;
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
 }
 
 .practiceitem {
   transition-property: all;
-  transition-duration: .7s;
+  transition-duration: .5s;
 }
 
 .practiceitem:hover {
-  font-size: 17px;
+ border: 1px solid black !important;
+ border-radius: 10px;
 }
 
 .coursemenu {
   transition-property: all;
   transition-duration: .7s;
   font-size: 17px;
+  border: 2px solid #007a803b;
 }
 
 .coursemenu:hover {
-  font-size: 16px;
   box-sizing: border-box;
+  border: 2px solid green;
+}
+.hr_interview_sites_list li{
+  transition-property: all;
+  transition-duration: .5s;
+  border: 1px solid transparent;
+}
+.hr_interview_sites_list li:hover{
+  border: 1px solid black;
 }
 
-@media screen and (max-width:500px) {
-  
+.video_course_left_section {
+  width: 50%;
+  float: left;
+}
+
+.video_course_right_section {
+  width: 50%;
+  float: left;
+  background: url('../public/video_courses.jpg') center center/cover no-repeat;
+  height: 350px;
+}
+
+.text_courses_left_section {
+  width: 50%;
+  float: left;
+  background: url('../public/placement-page.jpg') center center/cover no-repeat;
+  height: 350px;
+}
+
+.text_courses_right_section {
+  width: 50%;
+  float: left;
+}
+
+.practice_sites_left_section {
+  width: 50%;
+  float: left;
+}
+
+.practice_sites_right_section {
+  width: 50%;
+  float: left;
+  background: url('../public/coding_section.jpg') center center/cover no-repeat;
+  height: 350px;
+}
+
+.technical_interview_left_section {
+  width: 50%;
+  float: left;
+  background: url('../public/interview.jpg') center center/cover no-repeat;
+  height: 350px;
+}
+
+.technical_interview_right_section {
+  width: 50%;
+  float: left;
+}
+
+.hr_interview_left_section {
+  width: 50%;
+  float: left;
+}
+
+.hr_interview_right_section {
+  width: 50%;
+  float: left;
+  background: url('../public/interview.jpg') center center/cover no-repeat;
+  height: 350px;
+}
+
+.video_courses_head_text {
+  background: url('/public/video_courses.jpg') center center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text_courses_head_text{
+  background: url('/public/placement-page.jpg') center center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.practice_sites_head_text{
+  background: url('/public/coding_section.jpg') center center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interview_head_text{
+  background: url('/public/interview.jpg') center center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_container {
+  height: 100vh;
+  position: relative;
+}
+
+.about_container_inner {
+  position: relative;
+}
+
+.image_container {
+  float: right;
+  margin-right: 20px;
+}
+
+.my_image {
+  height: 100px;
+  border-radius: 50%;
+}
+.shortcut-menu{
+  transition: all;
+  transition-duration: .5s;
+  color: black;
+  border: 1px solid black !important;
+}
+.shortcut-menu:hover{
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width:1000px) {
+  #navbar {
+    text-align: center;
+  }
+
+  .width {
+    width: 700px;
+  }
+
+  .nav-container {
+    width: auto;
+    margin: 0px auto;
+  }
+
+  #content-container {
+    margin-left: 30px;
+  }
+
+  #placement {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .placement-left-section {
+    width: 640px;
+    margin-left: 40px;
+  }
+
+  .placement-right-section {
+    display: none;
+  }
+
+  .health_right_section {
+    width: 620px;
+    padding-left: 0px;
+    margin-left: 40px;
+  }
+
+  .health_left_section {
+    display: none;
+    margin-right: 0px;
+  }
+
+  .image_container {
+    float: none;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .video_course_left_section {
+    width: auto;
+    float: none;
+    text-align: center;
+  }
+
+  .video_course_right_section {
+    display: none;
+  }
+
+  .text_courses_left_section {
+    display: none;
+  }
+
+  .text_courses_right_section {
+    width: auto;
+    float: none;
+    text-align: center;
+    padding-left: 0px !important;
+
+  }
+  .practice_sites_left_section{
+    width: inherit;
+    text-align: center;
+  }
+  .practice_sites_right_section{
+    display: none;
+  }
+  .technical_interview_left_section{
+    display: none;
+  }
+  .technical_interview_right_section{
+    width: inherit;
+    text-align: center;
+    padding-left: 0px !important;
+  }
+  .hr_interview_left_section{
+    width: inherit;
+    text-align: center;
+  }
+  .hr_interview_right_section{
+    display: none;
+  }
+  .about_container {
+    height: 100vh;
+    position: relative;
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 20px;
+  }
+
+
+}
+
+@media screen and (max-width:650px) {
+  #navbar{
+    /* justify-content: center; */
+  }
+  #navbar ul{
+    display: flex;
+    justify-content: center;
+  }
+  .width {
+    width: 550px;
+  }
+
+  .homepage-content {
+    background: url('../public/background-main.jpg') center center/cover no-repeat;
+  }
+
+  .placement-left-section {
+    width: 550px;
+    margin-left: 30px;
+  }
+
+  #content-container {
+    margin-left: 20px;
+  }
+
+  .health_right_section {
+    width: 55%;
+    padding-left: 0px;
+    margin-left: 30px;
+  }
+
+  #navbar ul a {
+    padding: 0px 15px;
+  }
+
+
+}
+
+@media screen and (max-width:580px) {
+  .width {
+    width: 400px;
+  }
+
+  #content-container {
+    margin-left: 10px;
+  }
+
+  .placement-left-section {
+    width: 340px;
+    margin-left: 20px;
+  }
+
+  .health_right_section {
+    width: 330px;
+    padding-left: 0px;
+    margin-left: 20px;
+  }
+
+  #navbar ul a {
+    padding: 0px 5px;
+  }
+
+  .about_container {
+    height: 100%;
+    position: relative;
+  }
+
+ 
+
+}
+
+@media screen and (max-width:400px) {
+  .width {
+    width: 330px;
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 20px;
+  }
 }

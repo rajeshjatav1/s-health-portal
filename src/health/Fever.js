@@ -65,7 +65,7 @@ const Fever = () => {
 
             </div>
 
-            <div style={{ bottom: '0' }} className=' w-100'>
+            <div className='footer'>
                 <Footer />
             </div>
         </div>

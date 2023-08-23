@@ -73,8 +73,8 @@ const Prehome = () => {
                                             <div className=''>
                                                 <p>Not have an account yet?</p>
                                                 <div className="d-flex justify-content-center">
-                                                    <a style={{ backgroundColor: '#5252f121' }} className='text-decoration-none border p-1 rounded-pill px-3' data-bs-toggle='modal' data-bs-target='#register' data-bs-dismiss='modal' href=''><i className="bi bi-person-plus me-2"></i>Register</a>
-                                                    <a style={{ backgroundColor: '#5252f121' }} className='text-decoration-none mx-3 p-1 border rounded-pill px-3' href="/"><i className="bi bi-pencil-square me-2"></i>Forgot Password</a>
+                                                    <a style={{ backgroundColor: '#5252f121' }} className='text-decoration-none border p-1 rounded-pill px-3' data-bs-toggle='modal' data-bs-target='#register' data-bs-dismiss='modal' href='#'><i className="bi bi-person-plus me-2"></i>Register</a>
+                                                    <a style={{ backgroundColor: '#5252f121' }} className='text-decoration-none mx-3 p-1 border rounded-pill px-3' href="#"><i className="bi bi-pencil-square me-2"></i>Forgot Password</a>
                                                 </div>
 
                                             </div>

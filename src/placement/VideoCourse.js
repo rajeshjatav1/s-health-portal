@@ -9,11 +9,11 @@ const VideoCourse = () => {
             <div>
                 <Navbar />
             </div>
-            <div style={{ backgroundColor: '#dcebd7' }} className="fw-bold text-center mt-3 mx-3 rounded-4">
-                <h4 className='p-3'> Video Courses</h4>
+            <div className="fw-bold video_courses_head_text">
+            <h3 style={{ backgroundColor: '#ffffffad' }} className='d-inline-block py-3 px-5 mx-3 rounded-2'>Video Courses</h3>
             </div>
             <div className='row mt-3 margin-auto m-2'>
-                <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg p-3 m-1 rounded-4'>
+                <div className='col-lg p-3 m-1 rounded-4 border'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/C.png" alt="" />
                     </div>
@@ -25,7 +25,7 @@ const VideoCourse = () => {
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                <div class="modal-body">
                                     <div className='card-img text-center'>
                                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/C.png" alt="" />
                                     </div>
@@ -58,7 +58,7 @@ const VideoCourse = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg p-3 m-1 rounded-4'>
+                <div  className='col-lg p-3 m-1 rounded-4 border'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/C++.png" alt="" />
                     </div>
@@ -70,7 +70,7 @@ const VideoCourse = () => {
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                <div class="modal-body">
                                     <div className='card-img text-center'>
                                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/C++.png" alt="" />
                                     </div>
@@ -103,7 +103,7 @@ const VideoCourse = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg col-lg p-3 m-1 rounded-4'>
+                <div className='col-lg col-lg p-3 m-1 rounded-4 border'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/csharp.png" alt="" />
                     </div>
@@ -115,7 +115,7 @@ const VideoCourse = () => {
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                <div class="modal-body">
                                     <div className='card-img text-center'>
                                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/csharp.png" alt="" />
                                     </div>
@@ -151,7 +151,7 @@ const VideoCourse = () => {
 
             </div>
             <div className='row mt-5 margin-auto m-2'>
-                <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg col-lg p-3 m-1 rounded-4'>
+                <div className='border col-lg col-lg p-3 m-1 rounded-4'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/python.png" alt="" />
                     </div>
@@ -163,7 +163,7 @@ const VideoCourse = () => {
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                <div class="modal-body">
                                     <div className='card-img text-center'>
                                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/python.png" alt="" />
                                     </div>
@@ -197,7 +197,7 @@ const VideoCourse = () => {
                     </div>
                 </div>
 
-                <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg col-lg p-3 m-1 rounded-4'>
+                <div className='col-lg col-lg p-3 m-1 rounded-4 border'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/Java.png" alt="" />
                     </div>
@@ -209,7 +209,7 @@ const VideoCourse = () => {
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                <div class="modal-body">
                                     <div className='card-img text-center'>
                                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/Java.png" alt="" />
                                     </div>
@@ -242,7 +242,7 @@ const VideoCourse = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg col-lg p-3 m-1 rounded-4'>
+                <div className='col-lg col-lg p-3 m-1 rounded-4 border'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/html5.png" alt="" />
                     </div>
@@ -254,7 +254,7 @@ const VideoCourse = () => {
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                <div class="modal-body">
                                     <div className='card-img text-center'>
                                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/html5.png" alt="" />
                                     </div>
@@ -291,12 +291,12 @@ const VideoCourse = () => {
                 <h5 className='text-center text-success'>Go To <i class="bi bi-hand-index-thumb"></i></h5>
                 <div className='text-center container my-4 d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column flex-sm-row'>
 
-                    <Link className='text-decoration-none me-3 border p-2 rounded coursemenu m-1' to='/health'>Health page</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/'>Home page</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/text-course'>Text Courses</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
-                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/tech-interview'>Technical Interview</Link>
+                    <Link className='text-decoration-none me-3 border p-2 shortcut-menu m-1' to='/health'>Health page</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/'>Home page</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/text-course'>Text Courses</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
+                    <Link className='text-decoration-none border p-2 shortcut-menu me-3 m-1' to='/placement/tech-interview'>Technical Interview</Link>
                 </div>
             </div>
             <div style={{position:'relative'}} className="footer">
